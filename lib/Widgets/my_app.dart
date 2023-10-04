@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fluttercurse/home_page.dart';
+import 'package:fluttercurse/Widgets/home_page.dart';
 
 class MyApp extends StatelessWidget {
-  final String title;
-
-  const MyApp({super.key, required this.title});
-
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
