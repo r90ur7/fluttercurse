@@ -18,16 +18,30 @@ class HomePageState extends State<HomePage> {
         title: const Text('Meu Segundo App Flutter'),
       ),
       body: Center(
-          child: GestureDetector(
-              child: Text(
-                'O Pato clicou ->:3 ${counter}x',
-                style: const TextStyle(color: Colors.deepPurple, fontSize: 28),
-              ),
-              onTap: () {
-                setState(() {
-                  counter++;
-                });
-              })),
+        child: Container(
+          height: 550,
+          width: 750,
+          color: Colors.deepPurple,
+          child: Align(
+              alignment: Alignment.center,
+              child: Container(
+                height: 375,
+                width: 500,
+                color: Colors.teal,
+                child: Center(
+            child: GestureDetector(
+                child: Text(
+                  'O Pato clicou ->:3 ${counter}x',
+                  style: const TextStyle(color: Colors.deepPurple, fontSize: 28),
+                ),
+                onTap: () {
+                  setState(() {
+                    counter++;
+                  });
+                })),
+              )),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
