@@ -6,10 +6,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
-      home:const HomePage(),
-    );
+        theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          brightness: Brightness.dark, //Modal Theme
+        ),
+        home: const HomePage());
   }
 }
